@@ -66,11 +66,27 @@ section form{
     width: 48%;
 }
 
-.input-box input, select{
+.input-box input{
     padding: 14px 16px ;
     border: 1.5px solid #F0F0F0;
     outline: none;
     margin-block-start: 8px;
+    background-color: transparent;
+}
+
+.input-box select{
+    padding: 14px 16px;
+    border: 1.5px solid #F0F0F0;
+    outline: none;
+    margin-block-start: 8px;
+    background-color: transparent;
+}
+.full-box select{
+    padding: 14px 16px;
+    border: 1.5px solid #F0F0F0;
+    outline: none;
+    margin-block-start: 8px;
+    background-color: transparent;
 }
 
 .input-box input:focus, select:focus{
