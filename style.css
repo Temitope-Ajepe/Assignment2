@@ -72,6 +72,7 @@ section form{
     outline: none;
     margin-block-start: 8px;
     background-color: transparent;
+    width: 100%;
 }
 
 .input-box select{
