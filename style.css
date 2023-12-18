@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7FDFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin:  auto;
+    padding-block: 30px;
+
+}
+
+section {
+    width: 50%;
+}
+.section-one{
+    margin-inline: 140px 120px;
+}
+
+.para{
+    width: 80%;
+}
+
+.mobile{
+    display: none;
+}
+
+h1{
+    padding-block: 50px 20px;
+    font-size: 40px;
+}
+
+section form{
+    padding: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 50px 0 rgba(4,8,19,0.10);
+    border-radius: 6px;
+}
+
+.form-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-block-end: 30px;
+}
+
+.password-row{
+    margin-block: 30px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.input-box input, select{
+    padding: 14px 16px ;
+    border: 1.5px solid #F0F0F0;
+    outline: none;
+    margin-block-start: 8px;
+}
+
+.input-box input:focus, select:focus{
+    border: 1.5px solid #2EC4B6;
+}
+
+.full-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.full-box input{
+    padding: 14px 16px;
+    border: 1.5px solid #F0F0F0;
+    outline: none;
+    margin-block-start: 8px;
+}
+
+.full-box input:focus {
+    border: 1.5px solid #2EC4B6;
+}
+
+button{
+    padding: 14px 16px;
+    width: 100%;
+    background-color: #2EC4B6;
+    border: none;
+    color: #FFFFFF;
+}
+
+.inside, .outside{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-block-start: 16px;
+    
+}
+
+.outside a, .inside a{
+    color: #2EC4B6;
+}
+
+.outside {
+    display: none;
+}
+
+.input-box label, .full-box label{
+    color: #011C34;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.10000000149011612px;
+}
+
+@media screen and (max-width: 800px) {
+    section form {
+        padding: 40px 15px;
+        
+    }
+    .para {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    body {
+        margin-inline: 24px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    section form{
+        margin-block-start: 20px;
+    }
+
+    .outside{
+        display: block;
+    }
+    .inside{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px){
+    body{
+        margin-inline: 24px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .logo{
+        margin-block-start: 74px;
+    }
+
+    .para {
+        width: 100%;
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        margin-block-start: 12px;
+    }
+
+    section form {
+        padding-block-start: 40px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .input-box:first-of-type {
+        margin-block-end: 24px;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+
+    .outside{
+        font-size: 14px;
+    }
+
+}
